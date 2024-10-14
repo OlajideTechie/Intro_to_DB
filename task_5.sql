@@ -7,5 +7,5 @@ EXECUTE stmt;
 DEALLOCATE PREPARE stmt;
 
 -- Query to insert record in the specified table
-INSERT INTO customer('customer_id', 'customer_name', 'email', 'address')
+INSERT INTO customer(customer_id, customer_name, email, address)
 VALUES (1, 'Cole Baidoo', 'cbaidoo@sandtech.com', '123 Happiness Ave.')      
