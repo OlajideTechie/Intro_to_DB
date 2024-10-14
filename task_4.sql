@@ -1,4 +1,5 @@
-SET @tableName = 'Books';
+SET TABLE_NAME = 'Books';
+SET TABLE_SCHEMA = 'alx_book_store'
 
 SET @useDb = 'USE alx_book_store';
 PREPARE stmt FROM @useDb;
@@ -16,4 +17,4 @@ FROM
     INFORMATION_SCHEMA.COLUMNS
 WHERE 
     TABLE_SCHEMA = 'alx_book_store' AND 
-    TABLE_NAME = @tableName;           
+    TABLE_NAME = 'Books';           
