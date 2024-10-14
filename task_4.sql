@@ -1,5 +1,8 @@
+SET  TABLE_SCHEMA  = 'alx_book_store'; 
+SET TABLE_NAME = 'Books';
+
 -- Prepare and execute the statement to use the specified database
-SET @useDb = CONCAT('USE ', alx_book_store);
+SET @useDb = CONCAT('USE ', TABLE_SCHEMA);
 PREPARE stmt FROM @useDb;
 EXECUTE stmt;
 DEALLOCATE PREPARE stmt;
@@ -15,4 +18,4 @@ FROM
     INFORMATION_SCHEMA.COLUMNS
 WHERE 
     TABLE_SCHEMA = alx_book_store AND 
-    TABLE_NAME = books;
+    TABLE_NAME = Books;
