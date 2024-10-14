@@ -9,5 +9,5 @@ EXECUTE stmt;
 DEALLOCATE PREPARE stmt;
 
 -- list tables in alx_book_store databse
-USE @dbName;
+USE alx_book_store;
 SHOW TABLES;
