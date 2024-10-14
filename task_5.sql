@@ -1,4 +1,4 @@
-SET TABLE_NAME = 'Customer';
+SET TABLE_NAME = 'customer';
 SET TABLE_SCHEMA = 'alx_book_store'
 
 SET @useDb = CONCAT('USE ', @tableSchema);
@@ -7,7 +7,7 @@ EXECUTE stmt;
 DEALLOCATE PREPARE stmt;
 
 -- Query to insert record in the specified table
-INSERT INTO Customer(
+INSERT INTO customer(
    'customer_id', 
    'customer_name', 
    'email', 
