@@ -19,7 +19,7 @@ def create_database(database_name):
             # Creating a database
             create_db_query = f"CREATE DATABASE IF NOT EXISTS {database_name}"
             cursor.execute(create_db_query)
-            print(f"Database '{database_name}' created successfully!")
+            print(f"Database '{database_name}' created successfully or already exists")
 
     except Error as e:
         print(f"Error: {e}")
